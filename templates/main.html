@@ -1,0 +1,17 @@
+<!doctype html>
+<head>
+	<title>Minecraft Manager</title>
+	<script src="static/main.js" defer></script>
+	<link href="static/main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<h1>Minecraft Manager</h1>
+	<ul>
+	{% for player in whitelist: %}
+		<li>
+			<div class="name">{{player.name}}</div>
+			<div class="uuid">{{player.uuid}}</div>
+		</li>
+	{% endfor %}
+	</ul>
+</body>
