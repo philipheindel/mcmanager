@@ -1,0 +1,251 @@
+{
+    "commands" : [
+
+    ],
+    "gamerules" : [
+        {
+            "name" : "announceAdvancements",
+            "friendly_name" : "Announce advancements",
+            "description" : "Whether advancements should be announced in chat",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "commandBlockOutput",
+            "friendly_name" : "Broadcast command block output",
+            "description" : "Whether command blocks should notify admins when they perform commands",
+            "type" : "bool",
+            "default" : true
+        },        {
+            "name" : "disableElytraMovementCheck",
+            "friendly_name" : "Disable elytra movement check",
+            "description" : "Whether the server should skip checking player speed when the player is wearing elytra. Often helps with jittering due to lag in multiplayer",
+            "type" : "bool",
+            "default" : false
+        },
+        {
+            "name" : "disableRaids",
+            "friendly_name" : "Disable raids",
+            "description" : "Whether raids are disabled",
+            "type" : "bool",
+            "default" : false
+        },
+        {
+            "name" : "doDaylightCycle",
+            "friendly_name" : "Advance time of day",
+            "description" : "Whether the daylight cycle and moon phases progress",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "doEntityDrops",
+            "friendly_name" : "Drop entity equipment",
+            "description" : "Whether entities that are not mobs should have drops",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "doFireTick",
+            "friendly_name" : "Update fire",
+            "description" : "Whether fire should spread and naturally extinguish",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "doInsomnia",
+            "friendly_name" : "Spawn phantoms",
+            "description" : "Whether phantoms can spawn in the nighttime",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "doImmediateRespawn",
+            "friendly_name" : "Respawn immediately",
+            "description" : "Players respawn immediately without showing the death screen",
+            "type" : "bool",
+            "default" : false
+        },
+        {
+            "name" : "doLimitedCrafting",
+            "friendly_name" : "Require recipe for crafting",
+            "description" : "Whether players should be able to craft only those recipes that they've unlocked first",
+            "type" : "bool",
+            "default" : false
+        },
+        {
+            "name" : "doMobLoot",
+            "friendly_name" : "Drop mob loot",
+            "description" : "Whether mobs should drop items and experience orbs",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "doMobSpawning",
+            "friendly_name" : "Spawn mobs",
+            "description" : "Whether mobs should naturally spawn. Does not affect monster spawners",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "doPatrolSpawning",
+            "friendly_name" : "Spawn pillager patrols",
+            "description" : "Whether patrols can spawn",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "doTileDrops",
+            "friendly_name" : "Drop blocks",
+            "description" : "Whether blocks should have drops",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "doTraderSpawning",
+            "friendly_name" : "Spawn wandering traders",
+            "description" : "Whether wandering traders can spawn",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "doWeatherCycle",
+            "friendly_name" : "",
+            "description" : "Whether the weather can change naturally. The /weather command can still change weather.",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "drowningDamage",
+            "friendly_name" : "Deal drowning damage",
+            "description" : "Whether the player should take damage when drowning",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "fallDamage",
+            "friendly_name" : "Deal fall damage",
+            "description" : "Whether the player should take fall damage",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "fireDamage",
+            "friendly_name" : "Deal fire damage",
+            "description" : "Whether the player should take damage in fire, lava, campfires, or on magma blocks",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "forgiveDeadPlayers",
+            "friendly_name" : "Forgive dead players",
+            "description" : "Makes angered neutral mobs stop being angry when the targeted player dies nearby",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "freezeDamage",
+            "friendly_name" : "Deal freeze damage",
+            "description" : "Whether the player should take damage when inside powder snow",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "keepInventory",
+            "friendly_name" : "Keep inventory after death",
+            "description" : "Whether the player should keep items and experience in their inventory after death",
+            "type" : "bool",
+            "default" : false
+        },
+        {
+            "name" : "logAdminCommands",
+            "friendly_name" : "Broadcast admin commands",
+            "description" : "Whether to log admin commands to server log",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "maxCommandChainLength",
+            "friendly_name" : "Command chain size limit",
+            "description" : "The maximum length of a chain of commands that can be executed during one tick. Applies to command blocks and functions.",
+            "type" : "int",
+            "default" : 65536
+        },
+        {
+            "name" : "maxEntityCramming",
+            "friendly_name" : "Entity cramming threashold",
+            "description" : "The maximum number of pushable entities a mob or player can push, before taking 3(one and a half hearts) suffocation damage per half-second. Setting to 0 or lower disables the rule. Damage affects survival-mode or adventure-mode players, and all mobs but bats. Pushable entities include non-spectator-mode players, any mob except bats, as well as boats and minecarts.",
+            "type" : "ing",
+            "default" : 24
+        },
+        {
+            "name" : "mobGriefing",
+            "friendly_name" : "Allow destructive mob actions",
+            "description" : "Whether creepers, zombies, endermen, ghasts, withers, ender dragons, rabbits, sheep, villagers, silverfish, snow golems, and end crystals should be able to change blocks and whether mobs can pick up items, which also disables bartering. This also affects the capability of zombie-like creatures like zombified piglins and drowned to pathfind to turtle eggs.",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "naturalRegeneration",
+            "friendly_name" : "Regenerate health",
+            "description" : "Whether the player can regenerate health naturally if their hunger is full enough (doesn't affect external healing, such as golden apples, the Regeneration effect, etc.)",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "playersSleepingPercentage",
+            "friendly_name" : "Sleep percentage",
+            "description" : "What percentage of players must sleep to skip the night",
+            "type" : "int",
+            "default" : 100
+        },
+        {
+            "name" : "randomTickSpeed",
+            "friendly_name" : "Random tick speed rate",
+            "description" : "How often a random block tick occurs (such as plant growth, leaf decay, etc.) per chunk section per game tick. 0 and negative values disables random ticks, higher numbers increase random ticks. Setting to a high integer results in high speeds of decay and growth. Numbers over 4096 make plant growth or leaf decay instantaneous.",
+            "type" : "int",
+            "default" : 3
+        },
+        {
+            "name" : "reducedDebugInfo",
+            "friendly_name" : "Reduce debug info",
+            "description" : "Whether the debug screen shows all or reduced information; and whether the effects of F3+B (entity hitboxes) and F3+G (chunk boundaries) are shown.",
+            "type" : "bool",
+            "default" : false
+        },
+        {
+            "name" : "sendCommandFeedback",
+            "friendly_name" : "Send command feedback",
+            "description" : "Whether the feedback from commands executed by a player should show up in chat. Also affects the default behavior of whether command blocks store their output text.",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "showDeathMessages",
+            "friendly_name" : "Show death messages",
+            "description" : "Whether death messages are put into chat when a player dies. Also affects whether a message is sent to the pet's owner when the pet dies.",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "spawnRadius",
+            "friendly_name" : "Respawn location radius",
+            "description" : "The number of blocks outward from the world spawn coordinates that a player spawns in when first joining a server or when dying without a personal spawnpoint.",
+            "type" : "int",
+            "default" : 10
+        },
+        {
+            "name" : "spectatorsGenerateChunks",
+            "friendly_name" : "Allow spectators to generate terrain",
+            "description" : "Whether players in spectator mode can generate chunks",
+            "type" : "bool",
+            "default" : true
+        },
+        {
+            "name" : "universalAnger",
+            "friendly_name" : "Universal anger",
+            "description" : "Makes angered neutral mobs attack any nearby player, not just the player that angered them. Works best if forgiveDeadPlayers is disabled.",
+            "type" : "bool",
+            "default" : false
+        }
+    ]
+}

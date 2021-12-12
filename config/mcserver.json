@@ -1,32 +1,20 @@
 {
-    "root" : "/opt/mcserver",
+    "root" : "/home/philip/mcserver",
     "serverfiles" : "/serverfiles",
     "mcserver" : "/mcserver",
     "commands" : {
         "lgsm" : {
             "start" : {
                 "desc" : "Starts the server",
-                "command" : "start",
-                "takes_arg" : false
+                "command" : "start"
             },
             "stop" : {
                 "desc" : "Stops the server",
-                "command" : "stop",
-                "takes_arg" : false
+                "command" : "stop"
             },
             "send" : {
                 "desc" : "Sends a command to the console",
                 "command" : "send"
-            }
-        },
-        "minecraft": {
-            "list" : {
-                "command" : "/list",
-                "takes_arg" : false
-            },
-            "whitelist" : {
-                "command" : "/whitelist",
-                "sub_command" : ""
             }
         }
     }

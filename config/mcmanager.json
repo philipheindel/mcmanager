@@ -1,3 +1,13 @@
 {
-    "root" : "/opt/mcserver/mcmanager"
+    "root" : "/home/philip/mcserver",
+
+    "command" : {
+        "weather" : {
+            "options" : [
+                "clear",
+                "rain",
+                "thunder"
+            ]
+        }
+    }
 }
