@@ -128,5 +128,11 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# vscode config
+# VScode config
 .vscode/
+
+# Repl.it run config
+.replit
+
+# Created db files
+database/db/
