@@ -1,11 +1,10 @@
-import configparser
 from flask import Flask
 from flask import request
 from flask import render_template
 from flask import make_response
 from utils.Mcserver import Mcserver
 from utils.Config import Config
-from jproperties import Properties
+#from jproperties import Properties
 
 #region Load Configs
 
@@ -26,10 +25,11 @@ whitelist_file = serverfiles_directory + mcserver_config["whitelist"]
 ops_file = serverfiles_directory + mcserver_config["ops"]
 banned_ips_file = serverfiles_directory + mcserver_config["banned_ips"]
 banned_players_file = serverfiles_directory + mcserver_config["banned_players"]
-print(server_properties_file)
-p = Properties()
-with open(server_properties_file, "rb") as f:
-    p.load(f)
+#print(server_properties_file)
+#p = Properties()
+#with open(server_properties_file, "rb") as f:
+#    p.load(f)
+
 #endregion
 
 #region Flask Initialization
@@ -47,11 +47,6 @@ app = Flask(
 @app.route("/")
 def main():
     page = "main"
-    
-    config = configparser.ConfigParser()
-    config.read(server_properties_file)
-    
-    print(config)
 
     response = make_response(
         render_template(
