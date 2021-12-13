@@ -1,7 +1,12 @@
 {
-    "root" : "/home/philip/mcserver",
-    "serverfiles" : "/serverfiles",
+    "root_directory" : "/home/philip/mcserver",
     "mcserver" : "/mcserver",
+    "serverfiles" : "/serverfiles",
+    "server_properties" : "/server.properties",
+    "whitelist" : "/whitelist.json",
+    "ops" : "/ops.json",
+    "banned_ips" : "/banned-ips.json",
+    "banned_players" : "/banned-players.json",
     "commands" : {
         "lgsm" : {
             "start" : {

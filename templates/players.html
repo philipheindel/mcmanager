@@ -7,19 +7,15 @@
 	<script src="static/{{page}}.js" defer></script>
 </head>
 <body>
-	<h1>Minecraft Manager</h1>
+	<h1>Players</h1>
+    <div>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+        </ul>
+    </div>
 	<div>
-		<ul>
-			<li>
-				<a href="/players">Players</a>
-			</li>
-			<li>
-				<a href="/world">World</a>
-			</li>
-		</ul>
-	</div>
-	<div>
-		<h2>Players</h2>
 		<ul>
 		{% for player in whitelist: %}
 			<li>
@@ -28,10 +24,5 @@
 			</li>
 		{% endfor %}
 		</ul>
-	</div>
-	<div>
-		<h2>World</h2>
-		<input id="dayButton" type="button" value="Day"/>
-		<input id="weatherButton" type="button" value="Clear">
 	</div>
 </body>
