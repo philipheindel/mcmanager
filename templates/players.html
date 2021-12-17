@@ -8,6 +8,7 @@
 </head>
 <body>
 	<h1>Players</h1>
+
     <div>
         <ul>
             <li>
@@ -15,12 +16,17 @@
             </li>
         </ul>
     </div>
+	<div class="input-group mb-3">
+		<label class="input-group-text" for="playerName">Player:</label>
+		<input class="form-control" aria-label="Username" aria-describedby="basic-addon1" type="text" name="playerName" id="playerName"/>
+	</div>
+	<button id="addPlayerButton" class="btn btn-outline-primary">Add Player</button>
+	<button id="removePlayerButton" class="btn btn-outline-primary">Remove Player</button>
 	<div>
 		<ul>
 		{% for player in whitelist: %}
 			<li>
 				<div class="name">{{player.name}}</div>
-				<div class="uuid">{{player.uuid}}</div>
 			</li>
 		{% endfor %}
 		</ul>

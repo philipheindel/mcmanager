@@ -57,6 +57,19 @@ def main():
     #response.headers.add("Access-Control-Allow-Origin", "*")
     return response
 
+@app.route("/whitelist", methods = ["POST"])
+def whitelist():
+    player_to_add = ""
+    try:
+        data = request.json
+        action = data["action"]
+        player = data["player"]
+        player_to_add = player
+        mcserver_script.whitelist(action, player)
+    except BaseException as err:
+        print("oh no! our table! it's broken!")
+    return "Added " + player_to_add + " to whitelist", 200
+
 @app.route("/players")
 def players():
     page = "players"
@@ -101,8 +114,6 @@ def execute(command):
     except BaseException as err:
         print(err)
     return "Ran " + command, 200
-
-
 
 @app.route("/time", methods = ["POST"])
 def time():
