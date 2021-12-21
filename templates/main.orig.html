@@ -1,0 +1,37 @@
+<!doctype html>
+<head>
+	<title>Minecraft Manager</title>
+	<link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css"/>
+	<script src="static/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+	<link href="static/{{page}}.css" rel="stylesheet" type="text/css"/>
+	<script src="static/{{page}}.js" defer></script>
+</head>
+<body>
+	<h1>Minecraft Manager</h1>
+	<div>
+		<ul>
+			<li>
+				<a href="/players">Players</a>
+			</li>
+			<li>
+				<a href="/world">World</a>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<h2>Players</h2>
+		<ul>
+		{% for player in whitelist: %}
+			<li>
+				<div class="name">{{player.name}}</div>
+				<div class="uuid">{{player.uuid}}</div>
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
+	<div>
+		<h2>World</h2>
+		<input id="dayButton" type="button" value="Day"/>
+		<input id="weatherButton" type="button" value="Clear">
+	</div>
+</body>
