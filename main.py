@@ -74,8 +74,25 @@ def whitelist():
 def players():
     page = "players"
     
-    whitelist = config_loader.load_json(whitelist_file)
-    
+	#whitelist = config_loader.load_json(whitelist_file)
+    whitelist = [
+		{
+			"uuid" : "28f7bd46-380b-4a74-b890-3fe75e4df7ce",
+			"name" : "RedwardFilp",
+			"permissions" : "op"
+		},
+		{
+			"uuid" : "99263d05-8f2c-45eb-ba52-4592efd5852a",
+			"name" : "whatmind",
+			"permissions" : "player"
+		},
+		{
+			"uuid" : "26bd99a8-462e-4f79-b553-2b10eb412e2f",
+			"name" : "YiZhiMei17",
+			"permissions" : "player"
+		}
+	]
+
     response = make_response(
         render_template(
             page+".html",
@@ -99,8 +116,27 @@ def world():
 
 @app.route("/server")
 def server():
-    
-    return 200
+	page = "server"
+
+	response = make_response(
+		render_template(
+			page+".html",
+			page=page
+		)
+	)
+	return response
+
+@app.route("/manager")
+def manager():
+	page = "manager"
+
+	response = make_response(
+		render_template(
+			page+".html",
+			page=page
+		)
+	)
+	return response
 
 #endregion
 
