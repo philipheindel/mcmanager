@@ -1,2 +1,5 @@
 Flask
 python-crontab
+rcon
+scp
+paramiko

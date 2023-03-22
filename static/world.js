@@ -1,5 +1,13 @@
-document.querySelector("#dayButton").addEventListener("click", setDay);
-document.querySelector("#weatherButton").addEventListener("click", setWeather);
+document.querySelector("#btnSyncWorld").addEventListener("click", callSyncWorld);
+
+function callSyncWorld() {
+    fetch("/syncworld", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+    }).then(res => {
+        console.log("Request complete! response:", res);
+    });
+}
 
 function setDay() {
     let data = {
