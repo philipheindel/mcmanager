@@ -1,4 +1,6 @@
 Flask
+fastapi
+uvicorn[standard]
 python-crontab
 rcon
 scp
