@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="" />
+
+	<title>MC Manager</title>
+
+	<link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="static/bootstrap/css/bootstrap-grid.min.css" />
+	<link rel="stylesheet" href="static/bootstrap/css/bootstrap-reboot.min.css" />
+	<link rel="stylesheet" href="static/bootstrap/css/bootstrap-utilities.min.css" />
+
+	<script src="static/bootstrap/js/bootstrap.min.js" defer></script>
+	<script src="static/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+	<script src="static/bootstrap/js/bootstrap.esm.min.js" defer></script>
+
+	<link href="static/main.css" rel="stylesheet" type="text/css" />
+	<script src="static/main.js" defer></script>
+</head>
+
+<body>
+	<div class="container">
+        <div id="mainContent">
+            <h1>Dashboard</h1>
+            <div>
+                <div class="form-floating mb-3">
+                    <input id="txtServerIp" type="text" class="form-control" placeholder="Server IP">
+                    <label for="txtServerIp">Server IP</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input id="txtServerPort" type="text" class="form-control" placeholder="Server Port">
+                    <label for="txtServerPort">Server Port</label>
+                </div>
+                <div class="container">
+                    <input id="btnCopyWorld" type="button" class="btn btn-primary" value="Copy World" />
+                </div>
+                <div class="container mt-1">
+                    <input id="btnStartServer" type="button" class="btn btn-success" value="Start Server" />
+                    <input id="btnStopServer" type="button" class="btn btn-danger" value="Stop Server" />
+                </div>
+            </div>
+        </div>
+	</div>
+	
+</body>
+
+</html>
